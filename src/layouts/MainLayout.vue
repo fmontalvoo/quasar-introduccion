@@ -57,6 +57,12 @@ const linksList = [
     icon: 'las la-link',
     link: 'dialogs'
   },
+  {
+    title: 'Forms',
+    caption: 'forms',
+    icon: 'las la-link',
+    link: 'forms'
+  },
 ]
 
 export default defineComponent({

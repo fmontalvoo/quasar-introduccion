@@ -20,7 +20,12 @@
       </q-form>
 
     </div>
+
+    <div class="q-pa-md">
+      <q-btn color="purple" @click="showNotif" label="Show with caption" />
+    </div>
   </q-page>
+
 </template>
 
 <script>
@@ -46,7 +51,7 @@ export default {
           $q.notify({
             color: 'red-5',
             textColor: 'white',
-            icon: 'warning',
+            icon: 'las la-exclamation-triangle',
             message: 'You need to accept the license and terms first'
           })
         }
@@ -54,7 +59,7 @@ export default {
           $q.notify({
             color: 'green-4',
             textColor: 'white',
-            icon: 'cloud_done',
+            icon: 'las la-check-circle',
             message: 'Submitted'
           })
         }
@@ -64,6 +69,13 @@ export default {
         name.value = null
         age.value = null
         accept.value = false
+      },
+      showNotif() {
+        $q.notify({
+          message: 'Mensaje de prueba',
+          caption: 'subtitulo de prueba',
+          color: 'secondary'
+        })
       }
     }
   }

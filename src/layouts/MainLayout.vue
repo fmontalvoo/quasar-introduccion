@@ -51,6 +51,12 @@ const linksList = [
     icon: 'las la-link',
     link: 'flex'
   },
+  {
+    title: 'Dialogs',
+    caption: 'dialogs',
+    icon: 'las la-link',
+    link: 'dialogs'
+  },
 ]
 
 export default defineComponent({
